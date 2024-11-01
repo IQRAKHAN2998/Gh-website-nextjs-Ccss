@@ -1,0 +1,528 @@
+*{
+  padding: 0%;
+  margin: 0%;
+ 
+}
+/* Navbar container */
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px ;
+  background-color: #044E83; /* Dark background */
+  color: white;
+  height: 50px;
+
+}
+
+/* Logo styling */
+#nav1 img {
+  border-radius: 50%; /* Rounded logo */
+  width: 100px;
+  height: 90px;
+  margin-top: 90px;
+  margin-left: 50px;
+  
+}
+
+/* Slogan section */
+#nav2 p {
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Navigation links */
+#nav3 {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+
+#nav3 a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#nav3 a:hover {
+  background-color: #555; /* Darker on hover */
+  color: #f5f5f5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #nav {
+   
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+      height: 50%;
+    
+  }
+  #nav1 img{
+    margin-top: 0%;
+   text-align: left;
+    margin-left: 20px;
+    
+    width: 80px;
+  }
+
+  #nav3 {
+      margin-top: 0%;
+    display: flex;
+      flex-direction: column;
+      gap: 6px;
+      align-items: flex-start;
+      
+  }
+
+  #nav2 p {
+      font-size: 1rem;
+  }
+ 
+}
+
+/* aboutstyle */
+/* Heading style */
+#heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #333;
+  text-transform: uppercase;
+}
+
+/* Container for the content */
+#content-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual about section */
+#about-section {
+  
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+/* Section title */
+#section-title {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Paragraph style */
+#about-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  #content-container {
+      flex-direction: column;
+  }
+
+  #about-section {
+      margin-bottom: 20px;
+  }
+
+  #heading {
+      font-size: 2rem;
+  }
+
+  #section-title {
+      font-size: 1.5rem;
+  }
+}
+ /* resultStyle */
+ /* Center the result section */
+#result-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;  /* Restrict width for better centering */
+  margin: 50px auto;  /* Center horizontally and add vertical space */
+  padding: 20px;
+  background-color: #044E83;  /* White background for contrast */
+  border: 2px solid #ccc;  /* Add border */
+  border-radius: 10px;  /* Rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);  /* Shadow for depth */
+}
+
+/* Result title */
+#result-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Result link */
+#result-section a {
+  text-decoration: none;
+  color: #044E83;  /* Link color */
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect on the link */
+#result-section a:hover {
+  background-color: #044E83;
+  color: #fff;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  #result-section {
+      width: 90%;  /* Increase width on smaller screens */
+  }
+
+  #result-section h2 {
+      font-size: 1.8rem;
+  }
+
+  #result-section a {
+      font-size: 1.1rem;
+  }
+}
+/* coursesStyle */
+/* General container styling */
+#work {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  /* background-color: #f9f9f9; */
+  /* border: 2px solid #e0e0e0; */
+  /* border-radius: 10px; */
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+}
+
+/* Heading */
+#work h1 {
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+/* Paragraph styling */
+#work p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Image section styling */
+#images {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 8px black;
+}
+
+#images img {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Core courses section */
+#links {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#courses {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#links{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#links {
+  padding: 20px;
+}
+
+#links img {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#course-item1 , #course-item2 , #course-item3{
+  border: 20px solid black;
+}
+/* Advance courses section */
+#adv h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+#adv  {
+  width: 100%;
+  text-align: center;
+}
+
+#adv {
+  padding: 20px;
+}
+
+#adv  img {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Text under images */
+#adv  p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  #images, #swipe-img {
+      flex-direction: column;
+  }
+
+  #images img, #swipe-img img {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  #links table td, #adv table td {
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
+  }
+}
+
+#links {
+  text-align: center;
+}
+
+.course-container {
+  display: flex;
+  justify-content: space-around; /* Adjust to space the items evenly */
+  margin-top: 10px;
+  /* border:2px solid #555; */
+}
+
+.course-item {
+  display: flex;
+  flex-direction: column; /* Ensures image and text are vertically aligned */
+  align-items: center;
+  margin: 10px;
+}
+
+.course-item p {
+  margin-top: 10px; /* Space between image and text */
+  font-size: 16px;  /* Adjust the text size */
+  color: #333;      /* Text color */
+}
+
+#adv {
+  text-align: center;
+}
+
+.course-container {
+  display: flex;
+  flex-wrap: wrap; /* Ensures items wrap if screen is small */
+  justify-content: space-around; /* Adjust spacing between items */
+  margin-top: 20px;
+  
+}
+
+.course-item {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  margin: 15px;
+  /* border: #333 solid ; */
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.course-item p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+  text-align: center; /* Center text under image */
+}
+
+/* hero */
+#hero-section {
+  display: flex;
+  /* align-items: center; */
+  background-size: cover;
+  width: 100%;
+  padding: 50px 0;
+  background-color: rgba(239, 231, 231, 0.6); /* Dark background overlay */
+
+}
+
+#HEAD {
+  text-align: left;
+  margin-left: 100px;
+  max-width: 800px;
+  padding: 20px;
+  /* border-radius: 10px; */
+}
+
+#HEAD h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #044E83;
+  text-transform: uppercase;
+}
+
+#HEAD h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #2a3e53;
+}
+
+#HEAD h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: rgb(54, 212, 240);
+}
+
+#HEAD h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #044E83; /* Highlight color */
+}
+
+#HEAD h5 {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #202d66;
+}
+
+#BUTTON {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: left;
+  margin-top: 20px;
+ 
+}
+
+#BUTTON button {
+  background-color:#044E83;
+  padding: 10px 10px;
+  font-size: 18px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#BUTTON button:hover {
+  background-color: #1c9dff;
+}
+
+#BUTTON h1 {
+  margin-top: 20px;
+  margin-left: 50px;
+  font-size: 20px;
+  color: #07568e;
+}
+#leftside{
+  display: flex;
+  align-items: flex-start;
+ height: 200px;
+ width: 200px;
+ margin-left: 300px;
+}
+
+@media (max-width: 600px) {
+ #hero-section{
+  flex-direction: column;
+  height: 1000px;
+
+ }
+  #HEAD h1 {
+    font-size: 36px;
+  }
+  #HEAD h2 {
+    font-size: 28px;
+  }
+  #HEAD h3 {
+    font-size: 24px;
+  }
+  #HEAD h4 {
+    font-size: 20px;
+  }
+  #HEAD h5 {
+    font-size: 16px;
+  }
+  #BUTTON{
+  border: none;
+  }
+  #leftside {
+    margin-left: 0; /* Remove the left margin on mobile */
+    width: 100%; /* Make it take full width on mobile */
+    justify-content: center; /* Center content horizontally */
+  }
+}
+#contact {
+  text-align: center; /* Center align text */
+  margin: 20px auto; /* Add margin and center the div */
+  max-width: 600px; /* Set a maximum width */
+  width: 100%; /* Allow the div to be responsive */
+}
+
+#contact a {
+  display: inline-block; /* Make links block elements for better styling */
+  margin: 10px; /* Add spacing between links */
+  text-decoration: none; /* Remove underline from links */
+  color: #fff; /* Set text color */
+  padding: 10px 20px; /* Add padding around the text */
+  border-radius: 5px; /* Round the corners */
+  background-color: #007BFF; /* Set background color */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+#contact a:hover {
+  background-color: #0056b3; /* Darker background on hover */
+}
+
+
